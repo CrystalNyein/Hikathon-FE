@@ -21,7 +21,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <i class="fa-solid fa-bars nav-btn"></i>
+            <i class="fa-solid fa-bars nav-btn" onclick="openNav()"></i>
             <div class="nav-mobile">
                 <ul>
                     <li><a href="#">Tours</a></li>
@@ -65,4 +65,14 @@
     </div>
     <div class="footer">&copy; 2023 Nyein Chan Inc.</div>
 </body>
+<script>
+    function openNav(){
+        document.querySelector(".nav-mobile").style.display="block";
+    }
+    document.addEventListener("click",e=>{
+        if(e.target.closest(".nav-mobile")==null && e.target.closest(".nav-btn")==null){
+            document.querySelector(".nav-mobile").style.display="none";
+        }
+    })
+</script>
 </html>

@@ -49,7 +49,7 @@ nav ul li{
     color:var(--crimson-red);
     cursor: pointer;
 }
-.nav-mobile,.nav-btn{
+.nav-mobile,.fa-solid.nav-btn{
     display: none;
 }
 .banner-text{
@@ -206,7 +206,7 @@ h2{
         display: none;
     }
     .nav-mobile{
-        display: block;
+        display: none;
         position: absolute;
         right:4%;
         top: 1.5rem;
@@ -227,7 +227,7 @@ h2{
     .nav-mobile li:hover{
         background: #00000008;
     }
-    .nav-btn{
+    .fa-solid.nav-btn{
         display: block;
         font-size: 1.5rem;
         color:var(--crimson-red)
